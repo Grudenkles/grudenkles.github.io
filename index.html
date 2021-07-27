@@ -1,218 +1,586 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<!--[if IE 8 ]><html class="no-js oldie ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+<script src="https://kit.fontawesome.com/e75fe23773.js" crossorigin="anonymous"></script>
 <head>
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
+   <!--- basic page needs
+   ================================================== -->
+   <meta charset="utf-8">
+	<title>Andrew Sanderson</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
 
-  <title>ASanderson</title>
+   <!-- mobile specific metas
+   ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  <!-- Bootstrap Core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+ 	<!-- CSS
+   ================================================== -->
+   <link rel="stylesheet" href="css/base.css">
+   <link rel="stylesheet" href="css/main.css">
+   <link rel="stylesheet" href="css/vendor.css">
 
-  <!--FontAwesome -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+   <!-- script
+   ================================================== -->
+	<script src="js/modernizr.js"></script>
+	<script src="js/pace.min.js"></script>
 
-  <!-- Custom Fonts -->
-  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-  <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
-
-  <!-- Custom CSS -->
-  <link href="css/stylish-portfolio.min.css" rel="stylesheet">
+   <!-- favicons
+	================================================== -->
+	<link rel="icon" type="image/png" href="favicon.png">
 
 </head>
 
-<body id="page-top">
+<body id="top">
 
-  <!-- Navigation -->
-  <a class="menu-toggle rounded" href="#">
-    <i class="fas fa-bars"></i>
-  </a>
-  <nav id="sidebar-wrapper">
-    <ul class="sidebar-nav">
-      <li class="sidebar-brand">
-        <a class="js-scroll-trigger" href="#page-top">ASanderson</a>
-      </li>
-      <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#page-top">Home</a>
-      </li>
-      <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#about">About Me</a>
-      </li>
-      <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#services">My Skills</a>
-      </li>
-      <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#portfolio">My Portfolio</a>
-      </li>
-      <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#contact">Contact Me</a>
-      </li>
-    </ul>
-  </nav>
+	<!-- header
+   ================================================== -->
+   <header>
+   	<div class="row">
 
-  <!-- Header -->
-  <header class="masthead d-flex">
-    <div class="container text-center my-auto">
-      <h1 style="color:white;" class="mb-1">Welcome to ASanderson</h1>
-		<a href="#about"> <i style="font-size:5em;color:white;" class="fas fa-arrow-circle-down"></i></a>
-    </div>
-    <div class="overlay"></div>
-  </header>
+   		<div class="top-bar">
+   			<a class="menu-toggle" href="#"><span>Menu</span></a>
 
-  <!-- About -->
-  <section class="content-section bg-light" id="about">
-    <div class="container text-center">
-      <div class="row">
-        <div class="col-lg-10 mx-auto">
-		<img style="padding-bottom:5%;border-radius:50%;" src="img/profile.jpg" alt="">
-          <h2>Hello, I am Andrew Sanderson.</h2>
-          <p class="lead mb-5">I am an IT Technician based in Carlisle, Cumbria. I have been working within the IT industry <br />
-		  for 2 years now, however I enjoy all things IT and my interests in this span far and wide.</p>
-          <a class="btn btn-outline-dark btn-xl js-scroll-trigger" href="#services">View my skills</a>
-        </div>
-      </div>
-    </div>
-  </section>
+	   		<div class="logo">
+		         <a href="index.html">Andrew Sanderson</a>
+		      </div>
 
-  <!-- Skills -->
-  <section class="content-section bg-primary text-white text-center" id="services">
-    <div class="container">
-      <div class="content-section-heading">
-	  <h2 class="text-secondary mb-0">My Skills</h2>
-      <h3 class="mb-5">I have a variety of skills, view these below:</h3>
-      </div>
-      <div class="row">
-        <div class="col">
-          <span class="service-icon rounded-circle mx-auto mb-3">
-            <i class="fas fa-network-wired"></i>
-          </span>
-          <h4>
-            <strong>Infrastructure</strong>
-          </h4>
-          <p class="text-faded mb-0">I have experience with networking infrastructure such as switching & routing equipment, and also with servers in a domain environment.<br />&nbsp;</p>
-        </div>
-        <div class="col">
-          <span class="service-icon rounded-circle mx-auto mb-3">
-            <i class="fas fa-wifi"></i>
-          </span>
-          <h4>
-            <strong>Wireless</strong>
-          </h4>
-          <p class="text-faded mb-0">I have experience with wireless networking equipment such as the Unifi line of devices, the Unifi controller and more.</p>
-        </div>
-        <div class="col">
-          <span class="service-icon rounded-circle mx-auto mb-3">
-            <i class="fas fa-server"></i>
-          </span>
-          <h4>
-            <strong>Hardware</strong>
-          </h4>
-          <p class="text-faded mb-0">I have experience with hardware such as servers, desktop PCs, workstation PCs, gaming PCs, bespoke PCs, laptops & more. I also have an understanding of the variuous hardware standards within these.</p>
-        </div>
-        <div class="col">
-          <span class="service-icon rounded-circle mx-auto mb-3">
-            <i class="fas fa-globe-europe"></i>
-          </span>
-          <h4>
-            <strong>Web Design</strong>
-          </h4>
-          <p class="text-faded mb-0">I have experience with Web Design using various standards and formats, and have worked with various providers of domains, hosting and security services.</p>
-        </div>
-		<div class="col">
-          <span class="service-icon rounded-circle mx-auto mb-3">
-            <i class="fas fa-phone-volume"></i>
-          </span>
-          <h4>
-            <strong>Communications</strong>
-          </h4>
-          <p class="text-faded mb-0">I have experience with communications and IP telephony, interacting with such providers and systems as Twilio, 3CX, Gamma Horizon, Yealink & Polycom.</p>
-        </div>
-      </div>
-    </div>
-	<br /><br />
-	<a class="btn btn-outline-warning btn-xl js-scroll-trigger" href="#portfolio">See my portfolio</a>
-  </section>
+		   	<nav id="main-nav-wrap">
+					<ul class="main-navigation">
+						<li class="current"><a class="smoothscroll"  href="#intro" title="">Home</a></li>
+						<li><a class="smoothscroll"  href="#about" title="">About Me</a></li>
+            <li><a class="smoothscroll"  href="#stats" title="">My Technical Skills</a></li>
+						<li><a class="smoothscroll"  href="#resume" title="">My Resume</a></li>
+            <li><a class="smoothscroll"  href="#stats2" title="">My People Skills</a></li>
+						<li><a class="smoothscroll"  href="#contact" title="">Contact Me</a></li>
+					</ul>
+				</nav>
+   		</div> <!-- /top-bar -->
 
-  <!-- Portfolio -->
-  <section class="content-section" id="portfolio">
-    <div class="container">
-      <div class="content-section-heading text-center">
-        <h2 class="text-secondary mb-0">Portfolio</h2>
-        <h3 class="mb-5">View my past projects - click on any image to visit the site.</h3>
-      </div>
-      <div class="row no-gutters">
-        <div class="col-lg-6">
-          <a class="portfolio-item" href="#">
-            <img class="img-fluid" src="img/portfolio/scallywags.png" alt="Scallywags Dog Grooming">
-          </a>
-        </div>
-        <div class="col-lg-6">
-          <a class="portfolio-item" href="http://www.pawsomepaws.co.uk/" target="_blank">
-            <img class="img-fluid" src="img/portfolio/pawsome.png" alt="Pawsome Paws">
-          </a>
-        </div>
-        <div class="col-lg-12">
-          <a class="portfolio-item" href="http://www.cash4clothes-carlisle.com/" target="_blank">
-            <img class="img-fluid" src="img/portfolio/c4c.png" alt="">
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
+   	</div> <!-- /row -->
+   </header> <!-- /header -->
 
-  <!-- Call to Action -->
-  <section class="content-section bg-primary text-white">
-    <div class="container text-center">
-      <h2 class="mb-4">Contact me using the details below.</h2>
-	  <p>All the below details are interactive - e.g. if you click the telephone it will call me.</p>
-	  <div class="row">
-		<div class="col">
-			<a href="tel:+441228588188" class="btn btn-xl btn-outline-light mr-4 mb-4">(01228) 588 188 &nbsp;<i class="fas fa-phone"></i></i></a>
-			<a href="mailto:hello@asanderson.co.uk" class="btn btn-xl btn-warning mr-4 mb-4">hello@asanderson.co.uk &nbsp;<i class="fas fa-envelope"></i></a>
-			<a href="https://www.linkedin.com/in/asandersonca/" target="_blank" class="btn btn-xl btn-outline-light mr-4 mb-4">ASanderson CA &nbsp;<i class="fab fa-linkedin"></i></i></a>
-		</div>
-	  </div>
-    </div>
-  </section>
+	<!-- intro section
+   ================================================== -->
+   <section id="intro">
 
-  <!-- Map -->
-  <section id="contact" class="map">
-    <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d73413.39626468418!2d-3.0068068081922754!3d54.89996236103429!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487ce1df3eee6b0f%3A0x5c0a43b6ba15682d!2sCarlisle!5e0!3m2!1sen!2suk!4v1550274470353"></iframe>
-    <br />
-    <small>
-      <a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d73413.39626468418!2d-3.0068068081922754!3d54.89996236103429!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487ce1df3eee6b0f%3A0x5c0a43b6ba15682d!2sCarlisle!5e0!3m2!1sen!2suk!4v1550274470353"></a>
-    </small>
-  </section>
+   	<div class="intro-overlay"></div>
 
-  <!-- Footer -->
-  <footer class="footer text-center">
-    <div class="container">
-      <p class="text-muted mb-0">Web design by <a href="http://asanderson.co.uk">ASanderson</a> | Last updated 02/2019</p>
-    </div>
-  </footer>
+   	<div class="intro-content">
+   		<div class="row">
 
-  <!-- Scroll to Top Button-->
-  <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
-    <i class="fas fa-angle-up"></i>
-  </a>
+   			<div class="col-twelve">
 
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+	   			<h5>Hello, I am</h5>
+	   			<h1>Andrew Sanderson.</h1>
 
-  <!-- Plugin JavaScript -->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+	   			<p class="intro-position">
+	   				<span>IT ENGINEER</span>
+	   				<span>BASED IN NEWCASTLE</span>
+	   			</p>
 
-  <!-- Custom scripts for this template -->
-  <script src="js/stylish-portfolio.min.js"></script>
+	   			<a class="button stroke smoothscroll" href="#about" title="">More About Me</a>
 
-  <!--- Scroll script -->
-  <script src="js/scroll.js"></script>
+	   		</div>
+
+   		</div>
+   	</div> <!-- /intro-content -->
+
+   	<ul class="intro-social">
+         <li><a href="https://linkedin.com/in/asandersonca" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+         <li><a href="https://goo.gl/maps/oJA9CmnE9nfbm2Uv8" target="_blank"><i class="fa fa-map-marker"></i></a></li>
+      </ul> <!-- /intro-social -->
+
+   </section> <!-- /intro -->
+
+
+   <!-- about section
+   ================================================== -->
+   <section id="about">
+
+   	<div class="row section-intro">
+   		<div class="col-twelve">
+
+   			<h5>About Me:</h5>
+   			<h1>Let me introduce myself.</h1>
+
+   			<div class="intro-info">
+
+   				<img src="images/profile-pic.jpg" alt="Profile Picture">
+
+   				<p class="lead"><b>I am an IT Engineer, based in Newcastle upon Tyne.</b> <br /> I have years of experience in the industry; pride myself in my customer service excellence, and enjoy all things technical.</p>
+   			</div>
+
+   		</div>
+   	</div> <!-- /section-intro -->
+
+   	<div class="row about-content">
+
+   		<div class="col-six tab-full">
+
+   	</div>
+
+   	<div class="row button-section">
+   		<div class="col-twelve">
+   			<a href="#contact" title="Contact Me" class="button stroke smoothscroll">Contact Me</a>
+   			<a href="#stats" title="View Skills" class="button button-primary">View Skills</a>
+        <a href="#resume" title="View Resume" class="button">View Resume</a>
+   		</div>
+   	</div>
+
+   </section> <!-- /process-->
+
+   <!-- stats Section
+    ================================================== -->
+ 	<section id="stats" class="count-up">
+    <h1 style="color:white;padding-bottom:2%;">My technical skills</h1>
+
+ 		<div class="row">
+ 			<div class="col-twelve">
+
+ 				<div class="block-1-6 block-s-1-3 block-tab-1-2 block-mob-full stats-list">
+
+ 					<div class="bgrid stat">
+
+ 						<div class="icon-part">
+ 							<i class="icon-clock"></i>
+ 						</div>
+
+ 						<h3 class="stat-count2">
+ 							4 Years
+ 						</h3>
+
+ 						<h5 class="stat-title">
+ 							Experience
+ 						</h5>
+
+ 					</div> <!-- /stat -->
+
+ 					<div class="bgrid stat">
+
+ 						<div class="icon-part">
+ 							<i class="fa fa-server"></i>
+ 						</div>
+
+ 						<h3 class="stat-count2">
+ 							Infrastructure
+ 						</h3>
+
+ 						<h5 class="stat-title">
+ 							Skills
+ 						</h5>
+
+ 					</div> <!-- /stat -->
+
+ 					<div class="bgrid stat">
+
+ 						<div class="icon-part">
+ 							<i class="fa fa-network-wired"></i>
+ 						</div>
+
+ 						<h3 class="stat-count2">
+ 							Networking
+ 						</h3>
+
+ 						<h5 class="stat-title">
+ 							Skills
+ 						</h5>
+
+ 					</div> <!-- /stat -->
+
+ 					<div class="bgrid stat">
+
+ 						<div class="icon-part">
+ 							<i class="fas fa-desktop"></i>
+ 						</div>
+
+ 						<h3 class="stat-count2">
+ 							Hardware
+ 						</h3>
+
+ 						<h5 class="stat-title">
+ 							Skills
+ 						</h5>
+
+ 					</div> <!-- /stat -->
+
+ 					<div class="bgrid stat">
+
+ 						<div class="icon-part">
+ 							<i class="fas fa-download"></i>
+ 						</div>
+
+ 						<h3 class="stat-count2">
+ 							Software
+ 						</h3>
+
+ 						<h5 class="stat-title">
+ 							Skills
+ 						</h5>
+
+          </div> <!--- /stat -->
+
+          <div class="bgrid stat">
+
+ 						<div class="icon-part">
+ 							<i class="fas fa-broadcast-tower"></i>
+ 						</div>
+
+ 						<h3 class="stat-count2">
+ 							Comms
+ 						</h3>
+
+ 						<h5 class="stat-title">
+ 							Skills
+ 						</h5>
+          </div> <!--- /stat -->
+ 				</div> <!-- /stats-list -->
+
+ 			</div> <!-- /twelve -->
+ 		</div> <!-- /row -->
+
+ 	</section> <!-- /stats -->
+
+   <!-- resume Section
+   ================================================== -->
+	<section id="resume" class="grey-section">
+
+		<div class="row section-intro">
+   		<div class="col-twelve">
+
+   			<h5>Resume</h5>
+   			<h1>'See for yourself'</h1>
+        <p>Below is a fairly in-depth online resume. <br />
+          If you would prefer to discuss this, or request a copy of my CV, please <a href="#contact">contact me</a></p>
+   		</div>
+   	</div> <!-- /section-intro-->
+
+   	<div class="row resume-timeline">
+
+   		<div class="col-twelve resume-header">
+
+   			<h2>Work Experience</h2>
+
+   		</div> <!-- /resume-header -->
+
+   		<div class="col-twelve">
+
+   			<div class="timeline-wrap">
+
+   				<div class="timeline-block">
+
+	   				<div class="timeline-ico">
+	   					<i class="fas fa-cloud"></i>
+	   				</div>
+
+	   				<div class="timeline-header">
+	   					<h3>IT Engineer</h3>
+	   					<p>2020 - Present</p>
+	   				</div>
+
+	   				<div class="timeline-content">
+	   					<h4>RMT Technology</h4>
+	   					<p>Whilst at RMT I have had to adapt and deal with new challenges such as walk-up support with limited resources and documentation. This has helped me develop my ‘on the spot’ and ‘out of the box’ thinking to levels that I did not think possible. I have also taken on new responsibilities such as delivering customer-facing projects.
+                <br /><br />
+                For example; a recent infrastructure migration project where I have set up an Office 365 environment for a new client, delivered an email-platform migration from GSuite to Office 365, seamlessly, with minimal downtime and no end-user interaction and have migrated them from an on-premise server to SharePoint infrastructure within Office 365.
+                <br /><br />
+                This is in an effort to make their data readily available everywhere, more secure (previously they had no form of backups) and also make their ‘IT Stack’ more streamlined.
+                <br /><br />
+                I have tackled (and overcome) several hurdles during this project; such as lack of user understanding (down to not understanding Copy and Paste), having absolutely no access or credentials to existing infrastructure and having to recover access and gather information by myself ‘from the ground up’ - reverse engineering everything that was in place.</p>
+	   				</div>
+
+	   			</div> <!-- /timeline-block -->
+
+	   			<div class="timeline-block">
+
+	   				<div class="timeline-ico">
+	   					<i class="fab fa-amazon"></i>
+	   				</div>
+
+	   				<div class="timeline-header">
+	   					<h3>IT Technician</h3>
+	   					<p>2020</p>
+	   				</div>
+
+	   				<div class="timeline-content">
+	   					<h4>Amazon UK</h4>
+	   					<p>During my time with Amazon; I furthered my customer obsession (working for the most customer-centric company on the planet!) as well as gaining further hardware experience and direct onsite customer support. This has helped me expand my horizons and deal with new scenarios such as internal conflict resolution (people who are not eligible, demanding equipment for example) and how to deal with and resolve these issues effectively whilst maintaining customer obsession.</p>
+	   				</div>
+
+	   			</div> <!-- /timeline-block -->
+
+	   			<div class="timeline-block">
+
+	   				<div class="timeline-ico">
+	   					<i class="fas fa-server"></i>
+	   				</div>
+
+	   				<div class="timeline-header">
+	   					<h3>IT Technician</h3>
+	   					<p>2017-2020</p>
+	   				</div>
+
+	   				<div class="timeline-content">
+	   					<h4>David Allen IT</h4>
+	   					 <p>
+                 My responsibilities at David Allen IT mainly entailed taking support calls via telephone and email, helping customers across Cumbria resolve issues as quickly, efficiently and disruption free as possible. I ensured that customers were constantly kept updated on the status of any issues that I was dealing with, and was dynamic and flexible to suit the customer’s requirements aspects, such as resolving an issue effectively once, as a permanent fix, rather than a repeate workaround - and would often like to dive into root cause analysis.<br /><br />
+
+                 I pride myself on my intuition, and my customer service obsession that I developed whilst working in this role (I averaged 4.8 out of 5 stars in Customer Satisfaction ratings) and built many professional customer relationships (even on a first name basis with most). <br /><br />
+
+                 I was also involved in projects such as preparing for and delivering on-site deployments of customer equipment, and liked to be involved start-to-finish on these to ensure consistency. Further to this; I maintained our UniFi Networking stack and ensured smooth day-to-day operations, as well as overseeing and delivering patching and vital maintenance.
+              </p>
+	   				</div>
+
+	   			</div> <!-- /timeline-block -->
+
+          <div class="timeline-block">
+
+	   				<div class="timeline-ico">
+	   					<i class="fas fa-phone-volume"></i>
+	   				</div>
+
+	   				<div class="timeline-header">
+	   					<h3>Comms Engineer</h3>
+	   					<p>2016-2017</p>
+	   				</div>
+
+	   				<div class="timeline-content">
+	   					<h4>Online Systems (Northern)</h4>
+	   					<p>During my time as a Telecom Engineer, I installed and maintained on-premise PBXs, which helped me gain vital customer service skills, and was my introduction to a customer service based role. This kickstarted the customer-driven nature that I have today. I prepared systems, installed these on site and performed on-site and remote maintenance and diagnostics also.</p>
+	   				</div>
+
+	   			</div> <!-- /timeline-block -->
+
+   			</div> <!-- /timeline-wrap -->
+
+   		</div> <!-- /col-twelve -->
+
+   	</div> <!-- /resume-timeline -->
+
+	</section> <!-- /features -->
+
+	         </div> <!-- /portfolio-wrapper -->
+
+   		</div>  <!-- /twelve -->
+
+   	</div> <!-- /portfolio-content -->
+
+	</section> <!-- /portfolio -->
+
+  <!-- stats Section
+   ================================================== -->
+ <section id="stats" class="count-up">
+   <a href="#" id="stats2" style="visibility: hidden">Stats2</a>
+   <h1 style="color:white;padding-bottom:2%;">My people skills</h1>
+
+   <div class="row">
+     <div class="col-twelve">
+
+       <div class="block-1-6 block-s-1-3 block-tab-1-2 block-mob-full stats-list">
+
+         <div class="bgrid stat">
+
+           <div class="icon-part">
+             <i class="fas fa-hand-holding-heart"></i>
+           </div>
+
+           <h3 class="stat-count2">
+             Customer First
+           </h3>
+
+           <h5 class="stat-title">
+             100% of the time.
+             Delivering customer service excellence, with a customer-focused experience.
+           </h5>
+
+         </div> <!-- /stat -->
+
+         <div class="bgrid stat">
+
+           <div class="icon-part">
+             <i class="fas fa-handshake"></i>
+           </div>
+
+           <h3 class="stat-count2" style="font-size:2rem;">
+             Excellent Communication
+           </h3>
+
+           <h5 class="stat-title">
+             Taking an 'in-person' approach first, followed by phone or email.
+           </h5>
+
+         </div> <!-- /stat -->
+
+         <div class="bgrid stat">
+
+           <div class="icon-part">
+             <i class="fas fa-stopwatch"></i>
+           </div>
+
+           <h3 class="stat-count2">
+             Timely
+           </h3>
+
+           <h5 class="stat-title">
+             Providing regular, timely updates and scheduling tasks whenever convenient for the customer.
+           </h5>
+
+         </div> <!-- /stat -->
+
+         <div class="bgrid stat">
+
+           <div class="icon-part">
+             <i class="fas fa-universal-access"></i>
+           </div>
+
+           <h3 class="stat-count2">
+             Accessible
+           </h3>
+
+           <h5 class="stat-title">
+             Making IT accessible for all; I avoid using jargon, wherever possible, and will accomodate any skillset.
+           </h5>
+
+         </div> <!-- /stat -->
+
+         <div class="bgrid stat">
+
+           <div class="icon-part">
+             <i class="far fa-grin"></i>
+           </div>
+
+           <h3 class="stat-count2">
+             Approachable
+           </h3>
+
+           <h5 class="stat-title">
+             I am not your typical old-school IT person. <br/ >
+             I like to smash stereotypes and embrace change!
+           </h5>
+
+         </div> <!--- /stat -->
+
+         <div class="bgrid stat">
+
+           <div class="icon-part">
+             <i class="fas fa-search"></i>
+           </div>
+
+           <h3 class="stat-count2">
+             Resourceful
+           </h3>
+
+           <h5 class="stat-title">
+             I am extremely resourceful. If I do not know something, or it is ouside of my skillset - I will research and upskill!
+           </h5>
+         </div> <!--- /stat -->
+       </div> <!-- /stats-list -->
+
+     </div> <!-- /twelve -->
+   </div> <!-- /row -->
+
+ </section> <!-- /stats -->
+
+
+   <!-- contact
+   ================================================== -->
+	<section id="contact">
+
+		<div class="row section-intro">
+   		<div class="col-twelve">
+
+   			<h5>Contact Me</h5>
+   			<h1>I'd love to hear from you</h1>
+
+   		</div>
+   	</div> <!-- /section-intro -->
+
+   	<div class="row contact-info">
+
+   		<div class="col-four tab-full">
+
+   			<div class="icon">
+   				<i class="icon-pin"></i>
+   			</div>
+
+   			<h5>Where to find me</h5>
+
+   			<p>
+            Newcastle Upon Tyne<br>
+            Tyne and Wear<br>
+            United Kingdom
+            </p>
+
+   		</div>
+
+   		<div class="col-four tab-full collapse">
+
+   			<div class="icon">
+   				<i class="icon-mail"></i>
+   			</div>
+
+   			<h5>Email Me At</h5>
+
+   			<p>andrew@asanderson.co.uk</p>
+
+   		</div>
+
+   		<div class="col-four tab-full">
+
+   			<div class="icon">
+   				<i class="icon-phone"></i>
+   			</div>
+
+   			<h5>Call Me At</h5>
+
+   			<p>Telephone: 0191 743 743 7</p>
+   		</div>
+
+   	</div> <!-- /contact-info -->
+
+	</section> <!-- /contact -->
+
+
+   <!-- footer
+   ================================================== -->
+
+   <footer>
+     	<div class="row">
+
+     		<div class="col-six tab-full pull-right social">
+
+     			<ul class="footer-social">
+            <li><a href="https://linkedin.com/in/asandersonca" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="https://goo.gl/maps/oJA9CmnE9nfbm2Uv8" target="_blank"><i class="fa fa-map-marker"></i></a></li>
+			   </ul>
+
+	      </div>
+
+      	<div class="col-six tab-full">
+	      	<div class="copyright">
+		        	<span>Last updated in 2021.</span>
+		        	<span>Design by <a href="http://www.styleshout.com/">styleshout</a></span>
+		         </div>
+	      	</div>
+
+	      	<div id="go-top">
+		         <a class="smoothscroll" title="Back to Top" href="#top"><i class="fa fa-long-arrow-up"></i></a>
+		      </div>
+
+      	</div> <!-- /row -->
+   </footer>
+
+   <div id="preloader">
+    	<div id="loader"></div>
+   </div>
+
+   <!-- Java Script
+   ================================================== -->
+   <script src="js/jquery-2.1.3.min.js"></script>
+   <script src="js/plugins.js"></script>
+   <script src="js/main.js"></script>
 
 </body>
 
