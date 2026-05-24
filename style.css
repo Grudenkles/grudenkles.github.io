@@ -1,0 +1,755 @@
+/* Color Palette Variables */
+:root {
+    --bg-cream: #EFE7DA;
+    --text-plum: #320E3B;
+    --accent-teal: #37718E;
+    --accent-olive: #6E633D;
+    --accent-mauve: #AF929D;
+    
+    --font-heading: 'Outfit', sans-serif;
+    --font-body: 'DM Sans', sans-serif;
+}
+
+/* Base Reset & Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--bg-cream);
+    color: var(--text-plum);
+    font-family: var(--font-body);
+    font-size: 1.125rem;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4 {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+p {
+    margin-bottom: 1.5rem;
+}
+
+/* Layout Utility Classes */
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 5rem 0;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.max-width-p {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    background-color: var(--text-plum);
+    color: var(--bg-cream);
+    text-decoration: none;
+    padding: 1rem 2rem;
+    border-radius: 4px;
+    font-weight: 600;
+    font-family: var(--font-heading);
+    transition: background-color 0.3s ease;
+    border: 2px solid var(--text-plum);
+    margin-top: 1rem;
+}
+
+.btn:hover {
+    background-color: var(--bg-cream);
+    border-color: var(--text-plum);
+    color: var(--text-plum);
+}
+
+/* Inverted Buttons */
+.btn-inv {
+    display: inline-block;
+    background-color: var(--bg-cream);
+    color: var(--text-plum);
+    text-decoration: none;
+    padding: 1rem 2rem;
+    border-radius: 4px;
+    font-weight: 600;
+    font-family: var(--font-heading);
+    transition: background-color 0.3s ease;
+    border: 2px solid var(--text-plum);
+    margin-top: 1rem;
+}
+
+.btn-inv:hover {
+    background-color: var(--text-plum);
+    border-color: var(--text-plum);
+    color: var(--bg-cream);
+}
+
+/* Dynamic Title Fade Effect */
+#dynamic-title {
+    transition: opacity 0.5s ease-in-out;
+}
+
+.fade-out {
+    opacity: 0;
+}
+
+/* Hero Section */
+.hero {
+    padding-top: 1rem;
+}
+
+.hero .container {
+    padding-top: 0;
+    padding-bottom: 5rem;
+}
+
+.hero-logo-wrapper {
+    margin-bottom: 1rem; /* Creates separation between the logo and the text */
+}
+
+.hero-logo {
+    max-height: 250px; 
+    width: auto;
+    display: block;
+    margin-left: -70px;
+    margin-bottom: -50px;
+}
+
+.hero-title {
+    font-size: 5.5rem; 
+    color: var(--text-plum);
+    letter-spacing: -2px; 
+    line-height: 1.05;
+    margin-bottom: 1.5rem;
+}
+
+/* Teal Accent Line */
+.hero-title::before {
+    content: "";
+    display: block;
+    width: 65px;
+    height: 5px;
+    background-color: var(--accent-teal);
+    margin-bottom: 2rem;
+}
+
+.hero-subtitle {
+    font-size: 1.4rem; 
+    max-width: 800px;
+    margin-bottom: 0rem;
+    line-height: 1.6;
+    color: rgba(50, 14, 59, 0.85); 
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 2.5rem;
+    border-radius: 8px;
+    border-top: 4px solid var(--accent-olive);
+}
+
+.card .icon {
+    font-family: var(--font-heading);
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--accent-mauve);
+    margin-bottom: 1rem;
+}
+
+.card .icon svg {
+    width: 64px; 
+    height: 64px; 
+    stroke-width: 1.5px; 
+    color: var(--accent-mauve); 
+}
+
+/* 2x2 Strategic Quadrant Grid */
+.grid-2x2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Forces exactly 2 columns */
+    gap: 3rem;
+}
+
+/* Ensure mobile screens drop down to a single column so it remains readable */
+@media (max-width: 900px) {
+    .grid-2x2 {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Services Section Header */
+.section-header {
+    text-align: center; /* Centers it above the 2x2 grid */
+    margin-bottom: 4rem; /* Gives plenty of breathing room before the cards start */
+}
+
+.section-header .overline {
+    display: block;
+    color: var(--accent-teal); /* Uses your teal for a nice pop of color */
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.85rem;
+    margin-bottom: 0.75rem;
+}
+
+.section-header h2 {
+    color: var(--text-plum); /* Ensures the heading matches your dark brand color */
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+/* Service Card Breakdown Spacing */
+.service-breakdown p {
+    margin-bottom: 1rem; /* Tightens the gap between the What, How, and Why */
+    font-size: 1.05rem;  /* Keeps it highly readable but distinct from the headings */
+}
+
+.service-breakdown p:last-child {
+    margin-bottom: 0; /* Removes the extra space at the very bottom of the card */
+}
+
+/* Full Section Formatting */
+.paradigm-shift-section {
+    background-color: var(--bg-dark2); /* Ensure this matches your section background */
+    padding: 1rem 0; /* Massive breathing room above and below */
+    border-top: 1px solid rgba(255, 255, 255, 0.05); /* Subtle frame */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* The Main Headline */
+.paradigm-header h2 {
+    font-size: 2.8rem;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 3rem;
+    font-weight: 600;
+}
+
+/* The Contrast Grid */
+.paradigm-split {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Perfect 50/50 split */
+    gap: 2rem;
+    margin-bottom: 1rem;
+}
+
+.split-col {
+    display: flex;
+    flex-direction: column;
+}
+
+/* The stark vertical line separating the columns */
+.architect-col {
+    padding-left: 4rem;
+    border-left: 1px solid rgba(255, 255, 255, 0.15); 
+}
+
+/* The Overline Labels */
+.col-label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+}
+
+.industry-col .col-label {
+    color: rgba(255, 255, 255, 0.5); /* Crisp, legible semi-transparent white */
+}
+
+.highlight-label {
+    /* Uses a hardcoded bright cyan/teal to guarantee it pops against the dark blue */
+    color: white !important; 
+}
+
+/* Paragraph Typography */
+.industry-col p {
+    font-size: 1.15rem;
+    line-height: 1.7;
+    /* Brightened from the previous grey to a much cleaner off-white */
+    color: rgba(255, 255, 255, 0.75); 
+}
+
+.architect-col p {
+    font-size: 1.2rem; 
+    line-height: 1.7;
+    color: #ffffff; /* Pure white for maximum hierarchy */
+    margin-bottom: 1.5rem;
+}
+
+.architect-col strong {
+    /* Forces the bold text to match the bright cyan label */
+    color: white !important; 
+    font-weight: 600;
+}
+
+/* The Grounding Footer */
+.paradigm-footer {
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0.5rem;
+    background: rgba(0, 0, 0, 0.2); /* Creates a subtle card to hold the final thought */
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.paradigm-footer p {
+    margin: 0;
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 900px) {
+    .paradigm-header h2 {
+        font-size: 2.2rem;
+    }
+    .paradigm-split {
+        grid-template-columns: 1fr; /* Stacks the columns on mobile */
+        gap: 3rem;
+    }
+    .architect-col {
+        padding-left: 0;
+        border-left: none;
+        padding-top: 3rem;
+        border-top: 1px solid rgba(255, 255, 255, 0.15); /* Changes the dividing line to horizontal */
+    }
+    .paradigm-footer p {
+        font-size: 1.1rem;
+    }
+}
+
+/* Distinct Sections */
+.bg-dark {
+    background-color: var(--text-plum);
+    color: var(--bg-cream);
+}
+
+.bg-dark2 {
+    background-color: var(--accent-teal);
+    color: var(--bg-cream);
+}
+
+.bg-dark h2 {
+    color: var(--bg-cream);
+}
+
+/* Footer */
+footer {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-top: 1px solid rgba(0,0,0,0.05);
+}
+
+.footer-meta {
+    margin-top: 4rem;
+    font-size: 0.9rem;
+    opacity: 0.7;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    .nav-container {
+        flex-direction: column;
+        gap: 1.5rem;
+        text-align: center;
+    }
+}
+
+/* Intro Scroll Bridge */
+.intro-scroll-indicator {
+    margin-top: 2.5rem;
+    text-align: left; /* Snaps it to the left to match your other layout elements */
+}
+
+/* Structurally aligned Outline Button */
+.bridge-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem; 
+    color: var(--bg-cream);
+    font-weight: 600; /* Bolder, matching your main CTAs */
+    font-size: 1rem; 
+    text-transform: none; /* Removes the all-caps */
+    text-decoration: none;
+    padding: 0.75rem 1.5rem; 
+    border: 2px solid rgba(255, 255, 255, 0.4); /* Slightly thicker border for weight */
+    border-radius: 4px; /* Matches the slight curve of your hero buttons */
+    transition: all 0.3s ease;
+}
+
+.bridge-link:hover {
+    background: rgba(255, 255, 255, 0.1); 
+    border-color: var(--bg-cream); 
+}
+
+.bridge-link i {
+    width: 20px;
+    height: 20px;
+    transition: transform 0.3s ease; 
+}
+
+.bridge-link:hover i {
+    transform: translateY(4px); 
+}
+
+/* ==========================================================================
+   PROVEN OUTCOMES - INTERACTIVE DASHBOARD (PLUM, TRI-COLOR ACCENTS)
+   ========================================================================== */
+
+/* 1. Hide the Logic Inputs */
+.outcomes-hybrid input[type="radio"] {
+    display: none;
+}
+
+.interactive-gallery-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 4rem;
+    width: 100%;
+}
+
+/* 2. The Navigation Track */
+.gallery-track {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    width: 100%;
+}
+
+/* 3. The Interactive Tabs (Cards) */
+.gallery-card {
+    flex: 1 1 200px;
+    background-color: #2a1b29; /* Dark plum */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 1.5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+/* Tab Icon - Targets the injected SVG directly */
+.gallery-card svg {
+    color: #f7f5f0 !important; /* currentColor inherits this cream */
+    width: 26px;
+    height: 26px;
+    transition: all 0.3s ease;
+    opacity: 0.7; 
+}
+
+/* Tab Text - Idle */
+.gallery-card span {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #f7f5f0 !important; 
+    transition: all 0.3s ease;
+}
+
+.gallery-card:hover {
+    background-color: #362335;
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.gallery-card:hover svg {
+    opacity: 1; /* Lights up on hover */
+}
+
+/* 4. Active Tab States (The Radio Logic) */
+#case-1:checked ~ .gallery-track label[for="case-1"],
+#case-2:checked ~ .gallery-track label[for="case-2"],
+#case-3:checked ~ .gallery-track label[for="case-3"],
+#case-4:checked ~ .gallery-track label[for="case-4"] {
+    background-color: #1f131e;
+    border-color: var(--accent-teal, #2dd4bf);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Active Icon - Illuminates with Teal */
+#case-1:checked ~ .gallery-track label[for="case-1"] svg,
+#case-2:checked ~ .gallery-track label[for="case-2"] svg,
+#case-3:checked ~ .gallery-track label[for="case-3"] svg,
+#case-4:checked ~ .gallery-track label[for="case-4"] svg {
+    color: var(--accent-teal, #2dd4bf) !important;
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+#case-1:checked ~ .gallery-track label[for="case-1"] span,
+#case-2:checked ~ .gallery-track label[for="case-2"] span,
+#case-3:checked ~ .gallery-track label[for="case-3"] span,
+#case-4:checked ~ .gallery-track label[for="case-4"] span {
+    color: #ffffff !important;
+    font-weight: 700;
+}
+
+/* 5. The Content Viewer */
+.gallery-viewer {
+    background-color: #2a1b29;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 3rem;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* 6. Panel Display Logic */
+.viewer-panel {
+    display: none; 
+    animation: fadeIn 0.4s ease forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+#case-1:checked ~ .gallery-viewer #panel-1,
+#case-2:checked ~ .gallery-viewer #panel-2,
+#case-3:checked ~ .gallery-viewer #panel-3,
+#case-4:checked ~ .gallery-viewer #panel-4 {
+    display: block; 
+}
+
+/* 7. Panel Main Headline */
+.viewer-panel h3 {
+    font-size: 1.8rem;
+    color: #ffffff !important;
+    margin-top: 0;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    font-weight: 600;
+}
+
+.panel-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+}
+
+/* 8. The Tri-Color Highlight Columns */
+.panel-col {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    background: rgba(255, 255, 255, 0.03);
+    padding: 1.5rem;
+    border-radius: 6px;
+}
+
+.panel-col .panel-label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+.panel-col p {
+    margin: 0;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #f7f5f0 !important;
+}
+
+/* Column 1: The Challenge (Warm Amber Accent) */
+.panel-col:nth-child(1) { border-left: 3px solid #fbbf24; }
+.panel-col:nth-child(1) .panel-label { color: #fbbf24 !important; }
+
+/* Column 2: The Architecture (Cool Indigo Accent) */
+.panel-col:nth-child(2) { border-left: 3px solid #818cf8; }
+.panel-col:nth-child(2) .panel-label { color: #818cf8 !important; }
+
+/* Column 3: The Result (Original Teal Accent) */
+.panel-col:nth-child(3) { border-left: 3px solid var(--accent-teal, #2dd4bf); }
+.panel-col:nth-child(3) .panel-label { color: var(--accent-teal, #2dd4bf) !important; }
+.panel-col:nth-child(3) p {
+    color: #ffffff !important;
+    font-weight: 600;
+    font-size: 1.15rem;
+}
+
+/* 9. Mobile Responsiveness */
+@media (max-width: 900px) {
+    .gallery-track { gap: 0.75rem; }
+    
+    .gallery-card {
+        flex: 1 1 calc(50% - 0.75rem);
+        min-width: 140px;
+        padding: 1rem;
+    }
+
+    .gallery-viewer { padding: 2rem 1.5rem; }
+
+    .panel-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .viewer-panel h3 {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .panel-col { padding: 1.25rem; }
+}
+
+/* The Dark Footer Foundation */
+.contact-block-dark {
+    background-color: var(--text-plum); /* Your dark slate/purple */
+    color: #ffffff; 
+    padding: 100px 20px 40px 20px; 
+    text-align: center;
+}
+
+.contact-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Headers & Text */
+.contact-header {
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 20px;
+    color: #ffffff;
+    letter-spacing: -0.03em;
+}
+
+.contact-subtext {
+    font-size: 1.25rem;
+    margin-bottom: 50px;
+    opacity: 0.85;
+    font-weight: 400;
+    color: #e0e0e0;
+}
+
+/* The Button Row Layout */
+.contact-actions-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Ensures they stack nicely on mobile phones */
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+/* The Primary Accent Button (Warm Gold) */
+.btn-accent {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #ECA400; /* A richer, punchier gold/mustard */
+    color: #1A1A24; /* Dark text for contrast */
+    padding: 16px 32px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    text-decoration: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.btn-accent:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(236, 164, 0, 0.3);
+    background-color: #F5B518;
+}
+
+/* The Secondary Outline Buttons (Email & Phone) */
+.btn-outline {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+    padding: 16px 24px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1.05rem;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.btn-outline:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.4);
+    transform: translateY(-2px);
+}
+
+/* The 3CX Caveat Text */
+.phone-caveat {
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 60px;
+    line-height: 1.6;
+    font-style: italic;
+}
+
+/* The Footer Meta (Copyright & Location) */
+.footer-meta {
+    padding-top: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.footer-meta p {
+    margin: 5px 0;
+}
+
+.footer-meta a {
+    color: #ffffff;
+    font-weight: 500;
+    text-decoration: none;
+    opacity: 0.7;
+    transition: opacity 0.2s ease;
+}
+
+.footer-meta a:hover {
+    opacity: 1;
+}
+
+/* Mobile Responsiveness for Buttons */
+@media (max-width: 768px) {
+    .contact-actions-row {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .btn-accent, .btn-outline {
+        justify-content: center;
+    }
+}
